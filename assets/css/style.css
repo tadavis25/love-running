@@ -1,12 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@300&display=swap');
 
-.lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
 .lato-light {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -44,6 +38,9 @@ header {
     z-index: 90;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
 }
 
 header a {
@@ -82,8 +79,22 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
 }
 
+/* Nav toggle */
+#nav-toggle:checked ~ nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+    
 /* Main Content */
 main {
     background-color: lightblue;
@@ -92,6 +103,6 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: orange;     
+.footer {
+    background-color: orange;
 }
